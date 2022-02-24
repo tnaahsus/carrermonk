@@ -43,7 +43,9 @@
             background-color: #496dfc; 
             color:  #F5F6FA;
         }
-
+  #text{
+    font-weight: bold;
+}
         .notification {
             margin-left: 10px;
             position: absolute;
@@ -72,6 +74,13 @@
                 right: 10%;
                 bottom:none;
             }
+              #text{
+    font-weight: 500;
+}
+              .cancel {
+            width: 30px;
+            height: 30px;
+        }
             #firstSection ,#secondSection{
                 margin-bottom: 100px;
             }
@@ -332,9 +341,9 @@
                 empty = 'Password'
             }
             let notify = document.getElementById('notify');
-            let string = `<div class="notification bg-gradient border border-1 rounded">
+            let string = `<div class="notification border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
-                            <span id="text" style="font-weight: bold;">The ${empty} is required</span>
+                            <span id="text" >The ${empty} is required</span>
                           </div>`;
             let headerElement = getElementFromString(string);
             notify.appendChild(headerElement);
@@ -344,9 +353,9 @@
         }
         else if (!(email.match(mailformat))) {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification bg-gradient border border-1 rounded">
+            let string = `<div class="notification  border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
-                            <span id="text" style="font-weight: bold;">Invalid email</span>
+                            <span id="text">Invalid email</span>
                           </div>`;
             let headerElement = getElementFromString(string);
             notify.appendChild(headerElement);
@@ -356,9 +365,9 @@
         }
         else if (password.length < 6) {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification bg-gradient border border-1 rounded">
+            let string = `<div class="notification border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
-                            <span id="text" style="font-weight: bold;">The password should be at<br/> least 6 characters</span>
+                            <span id="text" >The password should be at<br/> least 6 characters</span>
                           </div>`;
             let headerElement = getElementFromString(string);
             notify.appendChild(headerElement);
@@ -381,9 +390,9 @@
         let cb = document.querySelector('#invalidCheck')
         if (businessName == '') {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification bg-gradient border border-1 rounded">
+            let string = `<div class="notification  border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
-                            <span id="text" style="font-weight: bold;">Business Name is required</span>
+                            <span id="text">Business Name is required</span>
                           </div>`;
             let headerElement = getElementFromString(string);
             notify.appendChild(headerElement);
@@ -393,9 +402,9 @@
         }
         else if (!(cb.checked)) {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification bg-gradient border border-1 rounded">
+            let string = `<div class="notification border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
-                            <span id="text" style="font-weight: bold;">The terms must be accepted.</span>
+                            <span id="text" >The terms must be accepted.</span>
                           </div>`;
             let headerElement = getElementFromString(string);
             notify.appendChild(headerElement);
