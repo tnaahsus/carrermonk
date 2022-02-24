@@ -71,6 +71,9 @@
                 right: 10%;
                 padding: 0px;
             }
+            #firstSection ,#secondSection{
+                margin-bottom: 100px;
+            }
         }
 
         .custom-select {
@@ -154,7 +157,7 @@
             <p>
                 Let’s get started and create your account
             </p>
-            <div id="firstSection">
+            <div id="firstSection" class='mb-5'>
                 <div class="mb-3 mt-3 text-start">
                     <label for="fullName" class="form-label">Full Name</label>
                     <input type="text" class="form-control p-2" style="background-color: #F5F6FA;" id="fullName"
@@ -170,10 +173,10 @@
                     <input type="password" class="form-control p-2" style="background-color: #F5F6FA;" id="password"
                         placeholder="Password">
                 </div>
-                <button type="button" class="btn fs-6 w-100 p-3  text-light " id="b1"
+                <button type="button" class="btn fs-6 w-100 p-3 mb-5  text-light " id="b1"
                     style="background-color: #496dfc;">Next Step</button>
             </div>
-            <div id="secondSection" style="display: none;">
+            <div id="secondSection" style="display: none;" class='mb-5'>
                 <div class="mb-3 mt-3 text-start">
                     <label for="businessName" class="form-label">Business Name</label>
                     <input type="text" class="form-control p-2" style="background-color: #F5F6FA;" id="businessName"
@@ -189,7 +192,7 @@
                     <input type="text" class="form-control p-2" style="background-color: #F5F6FA;" id="url"
                         placeholder="https://example.com">
                 </div>
-                <div class="mb-3 text-start">
+                <div class="mb-5 text-start">
                     <label class="form-label">Goal for using Warm Welcome</label> <br>
                     <div class="custom-select w-100" style="width:200px;">
                         <select>
@@ -207,7 +210,7 @@
                             I accept the <a href="#"  style="text-decoration: none;">Terms of Service</a>
                         </label>
                     </div>
-                    <div class="mb-3 d-flex flex-row">
+                    <div class="mb-5 d-flex flex-row">
                         <button type="button" class="btn me-1 fs-6 w-50 p-3  " id="b2">Previous Step</button>
                         <button type="button" class="btn fs-6 w-50 p-3  text-light " id="b3"
                             style="background-color: #496dfc;">Create Account</button>
