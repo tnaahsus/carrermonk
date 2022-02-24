@@ -331,7 +331,7 @@
                 empty = 'Password'
             }
             let notify = document.getElementById('notify');
-            let string = `<div class="notification border border-1 rounded">
+            let string = `<div class="notification bg-gradient border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
                             <span id="text" style="font-weight: bold;">The ${empty} is required</span>
                           </div>`;
@@ -343,7 +343,7 @@
         }
         else if (!(email.match(mailformat))) {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification border border-1 rounded">
+            let string = `<div class="notification bg-gradient border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
                             <span id="text" style="font-weight: bold;">Invalid email</span>
                           </div>`;
@@ -355,7 +355,7 @@
         }
         else if (password.length < 6) {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification border border-1 rounded">
+            let string = `<div class="notification bg-gradient border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
                             <span id="text" style="font-weight: bold;">The password should be at<br/> least 6 characters</span>
                           </div>`;
@@ -380,7 +380,7 @@
         let cb = document.querySelector('#invalidCheck')
         if (businessName == '') {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification border border-1 rounded">
+            let string = `<div class="notification bg-gradient border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
                             <span id="text" style="font-weight: bold;">Business Name is required</span>
                           </div>`;
@@ -392,7 +392,7 @@
         }
         else if (!(cb.checked)) {
             let notify = document.getElementById('notify');
-            let string = `<div class="notification border border-1 rounded">
+            let string = `<div class="notification bg-gradient border border-1 rounded">
                             <img class="cancel" src="./6820-cancel-or-error.gif"/>
                             <span id="text" style="font-weight: bold;">The terms must be accepted.</span>
                           </div>`;
